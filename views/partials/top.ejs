@@ -1,0 +1,40 @@
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<script>
+    let lang = false;
+</script> 
+
+<script>
+    let langChange = (lang, path) => {
+        let newLang = !lang;
+        axios.post('/lang', { data: newLang })
+            .then(response => {
+                location.reload();
+                axios.get(path);
+            })
+            .catch(err => console.log(err))};
+</script>
+
+<div id="top"> 
+
+        <div id="title-header">
+
+            <li id="header-link">
+                <a href='/'><h2>April Desy</h2></a>
+
+                <a href='/'>
+
+                    A personal website
+                    
+                </a>
+            </li>
+
+        </div>
+
+    <div id="lang-select"> 
+        <button onclick="langChange(lang, path)">
+            
+            </button>
+    </div>
+</div>
+
+<hr>

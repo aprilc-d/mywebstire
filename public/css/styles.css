@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #d4c4c47a;
+    width: 99%;
+}
+
+#list-nav-div {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    margin-bottom: 90px;  
+    padding-bottom: 10px #111
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: min-content;
+}
+
+#header-link {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5px;
+    margin-bottom: 3px; 
+}
+
+#header-link h2 {
+    font-size: larger;
+    color: black;
+}
+
+#header-link p {
+    color:#777;
+    font-size: medium;
+}
+
+#title-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: min-content;
+    margin-left: 20px;
+}
+
+#lang-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+button {
+    max-width: 35px;
+    max-height: 25px;
+    background-color: lightpink;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    transition: 0.5s;
+    background-color: salmon;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-bottom: 20px;
+    flex-direction: column;
+    color: #777;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 5px;
+    margin-bottom: 5px; 
+    font-size: larger;
+    color:#111;
+}
+
+a:link {
+    color: #111;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#111;
+    text-decoration: none;
+}
+
+a:hover{
+    color: salmon;
+}
+
+#short-description {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+#center {
+    display: flex;
+    justify-content: center;
+    
+}
+#organize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#wall-of-text {
+    display: block;
+    max-width: 550px;
+    margin-left: 30px;
+    padding: 20px;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: salmon;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    padding-top: 5px solid #0c0c0c;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px;
+    color: #777;
+    max-height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    margin-right: 40px;
+}
+
+hr {
+    color: 5px #777;
+    margin: 5px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+p {
+    margin: 0px;
+}
+
+#app {
+    background-image: url(/images/app.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}

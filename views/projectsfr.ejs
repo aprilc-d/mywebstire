@@ -1,0 +1,52 @@
+<html lang="fr">
+
+    [/- include('./partials/header.ejs') /]
+
+    <body>
+
+        [/- include('./partials/top.ejs') /]
+
+        <div id="center">
+
+        <div id="organize">
+            
+            <div id="wall-of-text">
+    
+                <p>
+                    En dessous de cela, il y a une liste des liens à mes projets personels avec une petite description. 
+                    Sur les pages individuelles, vous pouvez trouver, les descripitions plus précises des projets, le code source 
+                    et pour quelques des expériences intéteractives.  
+                </p>
+            </div>
+           
+    
+    
+            <div id="list-nav-div"> 
+    
+                <nav id="home-nav"> 
+                    
+                   <ul> 
+                        <li> <a href='/projects/chess-app'>Échecs</a></li>
+                            <p id="short-description">Un jeu d'échecs une interface utilisateur graphique qui est controlé <br> avec votre souris</p>
+                        <li> <a href='/projects/uno'>Uno</a> </li>
+                            <p id="short-description">Un jeu d'Uno jouables dans la linge de commande</p>
+                        <li> <a href="/projects/series">Approximateur des séries</a></li>
+                            <p id="short-description">Un programme de haskell qui donne des approximations <br> numériques des séries</p>
+                        <li> <a href="/projects/website">Ce site web</a></li>
+                            <p id="short-description">Un site web constuit de rien avec Node.js, JS, CSS et HTML</p>
+                   </ul>
+    
+                </nav>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    [/- include('./partials/footer.ejs') /]
+        
+    </body>
+
+
+</html>

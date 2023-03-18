@@ -1,0 +1,53 @@
+<html lang="en">
+
+    [/- include('./partials/header.ejs') /]
+
+    <body>
+
+        [/- include('./partials/top.ejs') /]
+
+        <div id="center">
+
+        <div id="organize">
+            
+            <div id="wall-of-text">
+    
+                <p>
+                    Below is a list of some of personal projects. I avoided 
+                    including school projects since many are samey and not very interesting.
+                    On this links below you will find a link to the source code, examples of their outputs, extra information and for some,
+                    something fun and interactable. 
+                </p>
+            </div>
+           
+    
+    
+            <div id="list-nav-div"> 
+    
+                <nav id="home-nav"> 
+                    
+                   <ul> 
+                        <li> <a href='/projects/chess-app'>Chess App</a></li>
+                            <p id="short-description">A chess app with a visual, mouse-controled ui and a simple ai opponent</p>
+                        <li> <a href='/projects/uno'>Uno</a> </li>
+                            <p id="short-description">A game of Uno playable in the command line</p>
+                        <li> <a href="/projects/series">Infinite Series Approximator</a></li>
+                            <p id="short-description">A haskell script that approximates infinite series and products</p>
+                        <li> <a href="/projects/website">This Website</a></li>
+                            <p id="short-description">A website with its own database, built from scratch with Node.js</p>
+                   </ul>
+    
+                </nav>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    [/- include('./partials/footer.ejs') /]
+        
+    </body>
+
+
+</html>

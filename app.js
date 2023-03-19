@@ -66,7 +66,13 @@ app.get('/', (request, response) => {
 })
 
 app.get('/about-me', (request, response) => {
-    response.render('about-me', {title: 'About Me', lang: isFrench, path: '/about-me'}) 
+    if (isFrench) {
+        response.render('aboutfr', {title: 'À propos', lang: isFrench, path: '/projects'})
+    } else {
+        response.render('about', {title: 'About Me', lang: isFrench, path: '/about-me'}) 
+    }
+
+    
 })
 
 app.get('/projects', (request, response) => {

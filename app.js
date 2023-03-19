@@ -23,7 +23,7 @@ const dbURI = "mongodb+srv://personalwebsite:Lwm43yh4vtDT8kqn@cluster0.g58pk4f.m
 
 //  .catch(err => console.log(err));
 
-app.listen(3000);
+app.listen(8080);
 
 //configure ejs settings
 ejs.delimiter = '/';

@@ -22,7 +22,7 @@ const dbURI = "mongodb+srv://personalwebsite:Lwm43yh4vtDT8kqn@cluster0.g58pk4f.m
 //    app.listen(3000)})
 
 //  .catch(err => console.log(err));
-
+ 
 app.listen(8080);
 
 //configure ejs settings
@@ -58,7 +58,7 @@ app.get('/lang', (request, response) => {
 app.get('/', (request, response) => {
 
     if (isFrench) {
-        response.render('indexjr', {title: 'Accueil', lang: isFrench, path: '/'});
+        response.render('indexfr', {title: 'Accueil', lang: isFrench, path: '/'});
     } else  {
         response.render('index', {title: 'Home', lang: isFrench, path: '/'});
     }

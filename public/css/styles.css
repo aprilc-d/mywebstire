@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #d4c4c47a;
+    background-color: #e4c5c57a;
     width: 99%;
 }
 
@@ -55,8 +55,8 @@ body {
 }
 
 button {
-    max-width: 35px;
-    max-height: 25px;
+    width: 35px;
+    height: 25px;
     background-color: lightpink;
     border: none;
     border-radius: 5px;

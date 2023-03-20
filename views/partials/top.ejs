@@ -1,10 +1,14 @@
 <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 <script>
-    let lang = false;
+    let lang = [/= lang /];
+    let path = [/= path /];
 </script> 
 
+
+
+
 <script>
-    let langChange = (lang, path) => {
+    let langChange = (lang) => {
         let newLang = !lang;
         axios.post('/lang', { data: newLang })
             .then(response => {
@@ -31,8 +35,12 @@
         </div>
 
     <div id="lang-select"> 
-        <button onclick="langChange(lang, path)">
-            
+        <button onclick="langChange(lang)">
+            [/ if (lang) { /]
+                EN
+            [/ } else { /]
+                FR 
+            [/ } /]
             </button>
     </div>
 </div>
